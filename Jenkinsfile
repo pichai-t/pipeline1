@@ -9,6 +9,13 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing...'
+
+            node {
+                def rootDir = pwd()
+                def T01 = load "${rootDir}/TestRunner.Groovy"
+                T01.Test01Runner()
+            }
+
             }
         }
         stage('Deploy') {
