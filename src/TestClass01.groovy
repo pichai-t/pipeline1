@@ -1,10 +1,10 @@
-class Test01 implements IConstants {
+class Test01 extends CConstants {
 
     def testMethod1() {
 
         println('3 - YES!!! -- In Test Method 1  !!!  Well Done Pichai!! ')
         
-        println('3: << -- ' + TESTPARAMETER + ' -- >> ')
+        println('3: << -- ' + ' -- >> ') // new Constants().TESTPARAMETER
 
     }
 
