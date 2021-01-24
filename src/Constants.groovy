@@ -1,13 +1,12 @@
 class CConstants {
 
-    static String TESTPARAMETER = "PICHAI YOU ARE AWESOME!"
+    //static String TESTPARAMETER = "PICHAI YOU ARE AWESOME!"
 
-    def printPara () {
+    def printPara() {
         println("TEST ME XXX")
-        println("4" + new CConstants().TESTPARAMETER )
-        println("TEST ME YYY")
+      //  println("4" + new CConstants().TESTPARAMETER )
+      //  println("TEST ME YYY")
     }
 
 }
-
 return new CConstants()
