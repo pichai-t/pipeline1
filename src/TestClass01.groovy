@@ -1,5 +1,3 @@
-import Interfaces.IConstants
-
 class Test01 implements IConstants {
 
     def testMethod1() {
