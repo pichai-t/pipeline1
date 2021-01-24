@@ -13,6 +13,7 @@ pipeline {
                     script {
                         def rootDir = pwd()
                         def T01 = load "${rootDir}/TestRunner.Groovy"
+                        println ('About to call T01.Test01Runner()!!! ')
                         T01.Test01Runner()
                     }
                 }
