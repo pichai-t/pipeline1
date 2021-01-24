@@ -7,12 +7,17 @@ pipeline {
             }
         }
         stage('Test') {
-            steps {
-                echo 'Testing...'
 
-                def rootDir = pwd()
-                def T01 = load "${rootDir}/TestRunner.Groovy"
-                T01.Test01Runner()
+            node {
+
+                steps {
+                    echo 'Testing...'
+
+                    def rootDir = pwd()
+                    def T01 = load "${rootDir}/TestRunner.Groovy"
+                    T01.Test01Runner()
+
+                }
 
             }
         }
