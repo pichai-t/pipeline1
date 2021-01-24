@@ -7,7 +7,6 @@ pipeline {
             }
         }
         stage('Test') {
-
                 steps {
                     echo 'Testing...'
                     script {
@@ -18,7 +17,6 @@ pipeline {
                         T01.Test01Runner()
                     }
                 }
-
         }
         stage('Deploy') {
             steps {
