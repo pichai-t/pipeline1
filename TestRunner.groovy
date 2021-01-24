@@ -5,8 +5,10 @@ def Test01Runner() {
     TestA.testMethod1()
 
     def CC = load "src/Constants.groovy"
+    println ('XX1 About to call CC.printPara()!! ')
     CC.printPara()
-    
+    println ('XX2 About to call CC.printPara()!! ')
+
 }
 
 return this

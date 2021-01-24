@@ -4,7 +4,7 @@ class CConstants {
 
     def printPara () {
 
-        println(TESTPARAMETER)
+        println('4' + TESTPARAMETER)
 
     }
 
